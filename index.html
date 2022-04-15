@@ -1,0 +1,113 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        text-align: center;
+        color: grey;
+      }
+      /* -----------NAV------------- */
+      nav {
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      li {
+        padding: 10px;
+        margin: 5px;
+        list-style-type: none;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none 5px;
+      }
+      li:hover {
+        transform: scaleX(1.3);
+        /* transform: skewX(25deg); */
+        transition: transform 0.1s ease-in, color 0.5s ease-in;
+      }
+      a {
+        font-weight: bold;
+        color: grey;
+        text-decoration: none;
+        padding: 3px 10px;
+      }
+      a:hover {
+        color: white;
+        background-color: grey;
+        /* font-size: large; */
+      }
+      /* ------------section------------ */
+      section {
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      section h1 {
+        height: 100%;
+      }
+      #section_1 {
+        background-image: url("https://images.unsplash.com/photo-1614102073832-030967418971?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+        height: 100vh;
+      }
+      #section_2 {
+        background-image: url("https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        height: 500px;
+      }
+      #section_3 {
+        background-image: url("https://images.unsplash.com/photo-1605007493699-af65834f8a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>Parallax website basic</h3>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#section_1">section 1</a></li>
+        <li><a href="#section_2">section 2</a></li>
+        <li><a href="#section_3">section 3</a></li>
+        <li><a href="#footer"> footer</a></li>
+      </ul>
+    </nav>
+    <section id="section_1">
+      <h1>section 1</h1>
+      <!-- <img
+        src="https://images.unsplash.com/photo-1614102073832-030967418971?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+        alt="mountains"
+      /> -->
+    </section>
+    <section id="section_2">
+      <h1>section 2</h1>
+      <!-- <img
+        src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        alt=""
+      /> -->
+    </section>
+    <section id="section_3">
+      <h3>section 3</h3>
+      <!-- <img
+        src="https://images.unsplash.com/photo-1605007493699-af65834f8a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+        alt=""
+      /> -->
+    </section>
+    <footer id="footer">
+      <h3>its a basic parallax web page just to practice</h3>
+    </footer>
+  </body>
+</html>
